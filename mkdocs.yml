@@ -1,4 +1,4 @@
-site_name: Engineering Portal
+site_name: Odoo Documentation
 repo_url: https://github.com/alejandroleal17/odoo-document
 theme:
   name: mkdocs
