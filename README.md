@@ -5,7 +5,7 @@ Internal Engineering Portal with documentation and references for Navigator Plat
 ## URLs
 
 - Main URL: https://www.documentation-odoo-troc.com/
-- Basic Auth: qbEZjrBmC8jfXggJzDWq
+- Basic Auth: qbEZjrBmC8jfXggJzDhu
 
 Basic authentication is included above without protection since it is only for documentation purposes while we are in playground mode. In the future, we could enhance security measures (or release it as is without auth).
 
