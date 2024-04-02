@@ -30,8 +30,6 @@ INFO    -  The following pages exist in the docs directory, but are not included
 INFO    -  Documentation built in 0.23 seconds
 INFO    -  [08:00:04] Watching paths for changes: 'docs', 'mkdocs.yml'
 INFO    -  [08:00:04] Serving on http://127.0.0.1:8000/
-INFO    -  [08:00:36] Browser connected: http://127.0.0.1:8000/
-INFO    -  [08:00:44] Browser connected: http://127.0.0.1:8000/
 
 ```
 
