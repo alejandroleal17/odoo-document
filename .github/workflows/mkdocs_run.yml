@@ -3,7 +3,7 @@ name: Build and Serve MkDocs
 on:
   push:
     branches:
-      - master  # Cambia esto al nombre de tu rama principal si es diferente
+      - main  # Cambia esto al nombre de tu rama principal si es diferente
 
 jobs:
   build:
