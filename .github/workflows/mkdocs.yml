@@ -1,0 +1,64 @@
+site_name: Engineering Portal
+repo_url: https://github.com/alejandroleal17/odoo-document
+theme:
+  name: mkdocs
+  logo: troc.gif
+  palette:
+    primary: red
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.tabs
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - General:
+    - Home: index.md
+    - Architecture: engineering/architecture.md
+    - Environments: engineering/environments.md 
+    - Development Guidelines:
+      - Sticky Bits: engineering/sticky-bits.md
+      - Stern:  engineering/stern_use.md
+      - CloudWatch: engineering/cloudwatch.md
+      
+  - GCP:
+    - Home: engineering/gcp/index.md
+    - Access: engineering/gcp/access.md
+    - Create Projects: engineering/gcp/projects.md
+    - OpenVPN: engineering/gcp/openvpn.md
+    - Container Registry (ECR/GCR): engineering/gcp/containers/gcp_artifact_registry.md
+    - Platform services:
+       - ScyllaDB: engineering/gcp/platform-services/scylladb-connection.md
+       - Rethinkdb: engineering/gcp/platform-services/rethinkdb-connection.md
+  
+  - AWS:
+    - Home: engineering/aws/index.md
+    - Access: engineering/aws/access.md
+    - OpenVPN: engineering/aws/openvpn.md
+    - Databases:
+       - RDS: engineering/aws/database/rdsconfig.md   
+       - Backups: engineering/aws/database/backup_schema_Troc.md
+       - Restore: engineering/aws/database/restaurar_db.md
+       - Schemes and tables: engineering/aws/database/Respaldar_Restaurar_Tablas.md
+       - Create PG Extensions: engineering/aws/database/extensiones_requeridas_pg.md
+    - Cloud Plaftorm: 
+       - Kubernetes: engineering/aws/cloud_plaftorm/Kubernetes.md
+
+# Agrega la acción de GitHub Pages al final del archivo
+deploy:
+  steps:
+    - name: GitHub Pages action
+      uses: peaceiris/actions-gh-pages@v3.9.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site # Directorio donde se encuentra el contenido estático generado por MkDocs
+        allow_empty_commit: true
