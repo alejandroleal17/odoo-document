@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Kubernetes - Engineering Portal</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Engineering Portal</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../.." class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../../architecture/" class="dropdown-item">Architecture</a>
+</li>
+                                    
+<li>
+    <a href="../../../environments/" class="dropdown-item">Environments</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Development Guidelines</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../sticky-bits/" class="dropdown-item">Sticky Bits</a>
+</li>
+            
+<li>
+    <a href="../../../stern_use/" class="dropdown-item">Stern</a>
+</li>
+            
+<li>
+    <a href="../../../cloudwatch/" class="dropdown-item">CloudWatch</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GCP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../gcp/" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../../gcp/access/" class="dropdown-item">Access</a>
+</li>
+                                    
+<li>
+    <a href="../../../gcp/projects/" class="dropdown-item">Create Projects</a>
+</li>
+                                    
+<li>
+    <a href="../../../gcp/openvpn/" class="dropdown-item">OpenVPN</a>
+</li>
+                                    
+<li>
+    <a href="../../../gcp/containers/gcp_artifact_registry/" class="dropdown-item">Container Registry (ECR/GCR)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform services</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../gcp/platform-services/scylladb-connection/" class="dropdown-item">ScyllaDB</a>
+</li>
+            
+<li>
+    <a href="../../../gcp/platform-services/rethinkdb-connection/" class="dropdown-item">Rethinkdb</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AWS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../access/" class="dropdown-item">Access</a>
+</li>
+                                    
+<li>
+    <a href="../../openvpn/" class="dropdown-item">OpenVPN</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Databases</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../database/rdsconfig/" class="dropdown-item">RDS</a>
+</li>
+            
+<li>
+    <a href="../../database/backup_schema_Troc/" class="dropdown-item">Backups</a>
+</li>
+            
+<li>
+    <a href="../../database/restaurar_db/" class="dropdown-item">Restore</a>
+</li>
+            
+<li>
+    <a href="../../database/Respaldar_Restaurar_Tablas/" class="dropdown-item">Schemes and tables</a>
+</li>
+            
+<li>
+    <a href="../../database/extensiones_requeridas_pg/" class="dropdown-item">Create PG Extensions</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud Plaftorm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Kubernetes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../database/extensiones_requeridas_pg/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alejandroleal17/odoo-document/edit/master/docs/engineering/aws/cloud_plaftorm/Kubernetes.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            
+            
+            <li class="nav-item" data-level="2"><a href="#interacting-with-pods" class="nav-link">Interacting with Pods</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#exporting-logs-to-a-file" class="nav-link">Exporting Logs to a File</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#additional-notes" class="nav-link">Additional Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<pre><code class="language-markdown"># Kubernetes Commands Usage Guide - Navigator Cluster
+
+This manual provides detailed instructions on how to use essential Kubernetes commands (`kubectl`) for managing and observing pods in different namespaces, as well as executing commands and tasks within the pods.
+
+## Prerequisites
+
+- `kubectl` installed and configured to interact with your Kubernetes cluster.
+- Access to the Kubernetes cluster where the pods and services are running.
+
+## Retrieving Pod Information
+
+### Listing Pods in a Namespace
+
+To get a list of all the pods in a specific namespace:
+
+```bash
+kubectl -n internal get pods
+</code></pre>
+<p>Replace <code>internal</code> with the desired namespace name.</p>
+<h3 id="describing-a-pod">Describing a Pod<a class="headerlink" href="#describing-a-pod" title="Permanent link">&para;</a></h3>
+<p>To view the detailed description of a specific pod:</p>
+<pre><code class="language-bash">kubectl -n internal describe pod logstash-logstash-0
+</code></pre>
+<p>Replace <code>logstash-logstash-0</code> with the desired pod name.</p>
+<h3 id="viewing-pod-logs">Viewing Pod Logs<a class="headerlink" href="#viewing-pod-logs" title="Permanent link">&para;</a></h3>
+<p>To view the logs of a specific pod:</p>
+<pre><code class="language-bash">kubectl -n internal logs dataintegrator-worker-production-d6754d94f-s68px
+</code></pre>
+<p>Replace <code>dataintegrator-worker-production-d6754d94f-s68px</code> with the desired pod name.</p>
+<h2 id="interacting-with-pods">Interacting with Pods<a class="headerlink" href="#interacting-with-pods" title="Permanent link">&para;</a></h2>
+<h3 id="connecting-to-a-pod">Connecting to a Pod<a class="headerlink" href="#connecting-to-a-pod" title="Permanent link">&para;</a></h3>
+<p>To connect to a pod and open an interactive shell inside it:</p>
+<pre><code class="language-bash">kubectl exec --stdin --tty dataintegrator-worker-production-66ff9d7675-zlvts -n production -- /bin/bash
+</code></pre>
+<p>Replace <code>dataintegrator-worker-production-66ff9d7675-zlvts</code> with the desired pod name.</p>
+<h3 id="executing-tasks-inside-a-worker">Executing Tasks Inside a Worker<a class="headerlink" href="#executing-tasks-inside-a-worker" title="Permanent link">&para;</a></h3>
+<p>To run a specific task inside a pod:</p>
+<ol>
+<li>Connect to the pod:
+   <code>bash
+   kubectl exec --stdin --tty dataintegrator-worker-dev-84cc998454-9d49w -n dev -- /bin/bash</code></li>
+<li>Once inside the pod, execute the command for the task:
+   <code>bash
+   di --program=epson --task=epson_store_ranking --debug —no-worker</code></li>
+</ol>
+<h2 id="exporting-logs-to-a-file">Exporting Logs to a File<a class="headerlink" href="#exporting-logs-to-a-file" title="Permanent link">&para;</a></h2>
+<p>To export the logs of a pod to a file on your local system:</p>
+<ol>
+<li>For a pod in the <code>production</code> namespace:
+   <code>bash
+   kubectl -n production logs dt-xfinity-ltm-transactions-cj-28301370-fvd22 &gt; log_ltm_trans.txt</code></li>
+<li>For a pod in the <code>dev</code> namespace:
+   <code>bash
+   kubectl -n dev logs dataintegrator-dev-c8f6b9fd6-99g2r &gt; Log_dataintegrator-dev-99g2r.txt</code></li>
+<li>For another pod in <code>dev</code>:
+   <code>bash
+   kubectl -n dev logs dataintegrator-worker-production-668486f477-8s2hz &gt; epson_store_ranking01.txt</code></li>
+</ol>
+<h2 id="additional-notes">Additional Notes<a class="headerlink" href="#additional-notes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Replace pod and namespace names with those corresponding to your specific environment and needs.</li>
+<li>Ensure you have the appropriate permissions to execute these commands in the Kubernetes cluster.</li>
+<li>Refer to the official <code>kubectl</code> documentation for more details and advanced options of these commands.</li>
+</ul>
+<p>This guide provides you with the basic tools for managing and observing pods in Kubernetes, as well as interacting with them and exporting their logs for further analysis.
+```</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

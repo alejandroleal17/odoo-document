@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>OpenVPN - Engineering Portal</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Engineering Portal</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../.." class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../architecture/" class="dropdown-item">Architecture</a>
+</li>
+                                    
+<li>
+    <a href="../../environments/" class="dropdown-item">Environments</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Development Guidelines</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../sticky-bits/" class="dropdown-item">Sticky Bits</a>
+</li>
+            
+<li>
+    <a href="../../stern_use/" class="dropdown-item">Stern</a>
+</li>
+            
+<li>
+    <a href="../../cloudwatch/" class="dropdown-item">CloudWatch</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GCP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../access/" class="dropdown-item">Access</a>
+</li>
+                                    
+<li>
+    <a href="../projects/" class="dropdown-item">Create Projects</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">OpenVPN</a>
+</li>
+                                    
+<li>
+    <a href="../containers/gcp_artifact_registry/" class="dropdown-item">Container Registry (ECR/GCR)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform services</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../platform-services/scylladb-connection/" class="dropdown-item">ScyllaDB</a>
+</li>
+            
+<li>
+    <a href="../platform-services/rethinkdb-connection/" class="dropdown-item">Rethinkdb</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AWS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../aws/" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../aws/access/" class="dropdown-item">Access</a>
+</li>
+                                    
+<li>
+    <a href="../../aws/openvpn/" class="dropdown-item">OpenVPN</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Databases</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../aws/database/rdsconfig/" class="dropdown-item">RDS</a>
+</li>
+            
+<li>
+    <a href="../../aws/database/backup_schema_Troc/" class="dropdown-item">Backups</a>
+</li>
+            
+<li>
+    <a href="../../aws/database/restaurar_db/" class="dropdown-item">Restore</a>
+</li>
+            
+<li>
+    <a href="../../aws/database/Respaldar_Restaurar_Tablas/" class="dropdown-item">Schemes and tables</a>
+</li>
+            
+<li>
+    <a href="../../aws/database/extensiones_requeridas_pg/" class="dropdown-item">Create PG Extensions</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud Plaftorm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../aws/cloud_plaftorm/Kubernetes/" class="dropdown-item">Kubernetes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../projects/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../containers/gcp_artifact_registry/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alejandroleal17/odoo-document/edit/master/docs/engineering/gcp/openvpn.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#openvpn" class="nav-link">OpenVPN</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#creating-and-deleting-users-in-the-vpn" class="nav-link">Creating and Deleting Users in the VPN</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notice" class="nav-link">Notice</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notice_1" class="nav-link">Notice</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notice_2" class="nav-link">Notice</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="openvpn">OpenVPN<a class="headerlink" href="#openvpn" title="Permanent link">&para;</a></h1>
+<p>A VPN server allows us to connect securely to the platform. We currently have two VPN servers in GCP under the following accounts:</p>
+<ul>
+<li><strong>troc-cluster-dev</strong></li>
+<li><strong>troc-cluster-prd</strong></li>
+</ul>
+<p>Each of these VPN servers enables us to connect to the platform in their respective environments. We are currently using <a href="https://github.com/angristan/openvpn-install">OpenVPN-installer</a> to manage the OpenVPN servers.</p>
+<h2 id="creating-and-deleting-users-in-the-vpn">Creating and Deleting Users in the VPN<a class="headerlink" href="#creating-and-deleting-users-in-the-vpn" title="Permanent link">&para;</a></h2>
+<p>To create or delete a user:</p>
+<ol>
+<li>
+<p>Connect to the VPN server: <code>ssh &lt;username&gt;@&lt;ip-address&gt;</code>. To obtain the IP address, check the Google Cloud UI.</p>
+</li>
+<li>
+<p>Use the OpenVPN script to manage user creation or deletion. It is very intuitive; here is an example:</p>
+<p>```shell
+mogaal@openvpn:~$ sudo /srv/openvpn-install.sh 
+Welcome to OpenVPN-install!
+The git repository is available at: https://github.com/angristan/openvpn-install</p>
+<p>It looks like OpenVPN is already installed.</p>
+<p>What do you want to do?
+   1) Add a new user
+   2) Revoke existing user
+   3) Remove OpenVPN
+   4) Exit
+Select an option [1-4]: 1</p>
+<p>Tell me a name for the client.
+The name must consist of alphanumeric character. It may also include an underscore or a dash.
+Client name: oslan</p>
+<p>Do you want to protect the configuration file with a password?
+(e.g. encrypt the private key with a password)
+   1) Add a passwordless client
+   2) Use a password for the client
+Select an option [1-2]: 1</p>
+<ul>
+<li>
+<p>Using SSL: openssl OpenSSL 3.0.8 7 Feb 2023 (Library: OpenSSL 3.0.8 7 Feb 2023)</p>
+</li>
+<li>
+<p>Using Easy-RSA configuration: /etc/openvpn/easy-rsa/vars</p>
+</li>
+<li>
+<p>The preferred location for 'vars' is within the PKI folder.
+  To silence this message move your 'vars' file to your PKI
+  or declare your 'vars' file with option: --vars=<FILE></p>
+</li>
+</ul>
+<hr />
+<h2 id="notice">Notice<a class="headerlink" href="#notice" title="Permanent link">&para;</a></h2>
+<p>Keypair and certificate request completed. Your files are:
+req: /etc/openvpn/easy-rsa/pki/reqs/oslan.req
+key: /etc/openvpn/easy-rsa/pki/private/oslan.key
+Using configuration from /etc/openvpn/easy-rsa/pki/401e8d65/temp.d30a61f3
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'oslan'
+Certificate is to be certified until Mar 10 12:02:09 2026 GMT (825 days)</p>
+<p>Write out database with 1 new entries
+Data Base Updated</p>
+<h2 id="notice_1">Notice<a class="headerlink" href="#notice_1" title="Permanent link">&para;</a></h2>
+<p>Certificate created at:
+* /etc/openvpn/easy-rsa/pki/issued/oslan.crt</p>
+<h2 id="notice_2">Notice<a class="headerlink" href="#notice_2" title="Permanent link">&para;</a></h2>
+<p>Inline file created:
+* /etc/openvpn/easy-rsa/pki/inline/oslan.inline
+Client oslan added.</p>
+<p>The configuration file has been written to /home/mogaal/oslan.ovpn.
+Download the .ovpn file and import it in your OpenVPN client.
+mogaal@openvpn:~$
+```</p>
+</li>
+<li>
+<p>Share the <code>username.ovpn</code> file with the user and ask them to install it on their machine.</p>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

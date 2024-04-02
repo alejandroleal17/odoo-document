@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>OpenVPN - Engineering Portal</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Engineering Portal</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../.." class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../architecture/" class="dropdown-item">Architecture</a>
+</li>
+                                    
+<li>
+    <a href="../../environments/" class="dropdown-item">Environments</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Development Guidelines</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../sticky-bits/" class="dropdown-item">Sticky Bits</a>
+</li>
+            
+<li>
+    <a href="../../stern_use/" class="dropdown-item">Stern</a>
+</li>
+            
+<li>
+    <a href="../../cloudwatch/" class="dropdown-item">CloudWatch</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GCP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../gcp/" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/access/" class="dropdown-item">Access</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/projects/" class="dropdown-item">Create Projects</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/openvpn/" class="dropdown-item">OpenVPN</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/containers/gcp_artifact_registry/" class="dropdown-item">Container Registry (ECR/GCR)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform services</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../gcp/platform-services/scylladb-connection/" class="dropdown-item">ScyllaDB</a>
+</li>
+            
+<li>
+    <a href="../../gcp/platform-services/rethinkdb-connection/" class="dropdown-item">Rethinkdb</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AWS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../access/" class="dropdown-item">Access</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">OpenVPN</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Databases</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../database/rdsconfig/" class="dropdown-item">RDS</a>
+</li>
+            
+<li>
+    <a href="../database/backup_schema_Troc/" class="dropdown-item">Backups</a>
+</li>
+            
+<li>
+    <a href="../database/restaurar_db/" class="dropdown-item">Restore</a>
+</li>
+            
+<li>
+    <a href="../database/Respaldar_Restaurar_Tablas/" class="dropdown-item">Schemes and tables</a>
+</li>
+            
+<li>
+    <a href="../database/extensiones_requeridas_pg/" class="dropdown-item">Create PG Extensions</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud Plaftorm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloud_plaftorm/Kubernetes/" class="dropdown-item">Kubernetes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../access/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../database/rdsconfig/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alejandroleal17/odoo-document/edit/master/docs/engineering/aws/openvpn.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#installing-the-openvpn-connect-client-on-windows" class="nav-link">Installing the OpenVPN Connect Client on Windows</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#download-the-installer" class="nav-link">Download the Installer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#run-the-installer" class="nav-link">Run the Installer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#installation-assistant" class="nav-link">Installation Assistant</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#finish-installation" class="nav-link">Finish Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-the-openvpn-connect-client-to-connect-to-a-vpn" class="nav-link">Using the OpenVPN Connect Client to connect to a VPN</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#launch-openvpn-connect-client" class="nav-link">Launch OpenVPN Connect Client</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#import-vpn-profile" class="nav-link">Import VPN Profile</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#connect-to-the-vpn" class="nav-link">Connect to the VPN</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#connection-verification" class="nav-link">Connection Verification</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-the-vpn" class="nav-link">Using the VPN</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#profile-management" class="nav-link">Profile Management</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#getting-started-with-openvpn-3-linux" class="nav-link">Getting Started with OpenVPN 3 Linux</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#pre-built-packages" class="nav-link">Pre-built Packages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#installation-instructions" class="nav-link">Installation Instructions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-openvpn-3-linux" class="nav-link">Using OpenVPN 3 Linux</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#further-information" class="nav-link">Further Information</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="installing-the-openvpn-connect-client-on-windows">Installing the OpenVPN Connect Client on Windows<a class="headerlink" href="#installing-the-openvpn-connect-client-on-windows" title="Permanent link">&para;</a></h1>
+<h2 id="download-the-installer">Download the Installer<a class="headerlink" href="#download-the-installer" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Visit the download link provided: <a href="https://openvpn.net/downloads/openvpn-connect-v3-windows.msi">OpenVPN Connect v3</a>.</li>
+<li>Click on "Download OpenVPN Connect v3".</li>
+</ul>
+<h2 id="run-the-installer">Run the Installer<a class="headerlink" href="#run-the-installer" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Locate the <code>.msi</code> file you downloaded and double-click it to start the installation process.</li>
+</ul>
+<h2 id="installation-assistant">Installation Assistant<a class="headerlink" href="#installation-assistant" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Follow the instructions in the installation wizard. This usually includes agreeing to the terms of the license agreement and selecting the destination folder for installation.</li>
+</ul>
+<h2 id="finish-installation">Finish Installation<a class="headerlink" href="#finish-installation" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Once the wizard is finished, click "Finish" to complete the installation.</li>
+<li>More details available at <a href="https://openvpn.net/client/client-connect-vpn-for-windows/">OpenVPN Connect Client for Windows</a>.</li>
+</ul>
+<h2 id="using-the-openvpn-connect-client-to-connect-to-a-vpn">Using the OpenVPN Connect Client to connect to a VPN<a class="headerlink" href="#using-the-openvpn-connect-client-to-connect-to-a-vpn" title="Permanent link">&para;</a></h2>
+<h2 id="launch-openvpn-connect-client">Launch OpenVPN Connect Client<a class="headerlink" href="#launch-openvpn-connect-client" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Look for OpenVPN Connect in the Windows Start menu and open it.</li>
+</ul>
+<h2 id="import-vpn-profile">Import VPN Profile<a class="headerlink" href="#import-vpn-profile" title="Permanent link">&para;</a></h2>
+<ul>
+<li>On the main interface, click on "Import Profile".</li>
+<li>You have two options:</li>
+<li><strong>URL</strong>: Enter the URL provided by your VPN administrator.</li>
+<li><strong>FILE</strong>: Drag and drop the <code>.ovpn</code> file into the window or click "BROWSE" to locate and select the file on your computer.</li>
+<li>Note: Import the <code>.ovpn</code> files generated for Navigator's DEV and PROD connections here.</li>
+</ul>
+<h2 id="connect-to-the-vpn">Connect to the VPN<a class="headerlink" href="#connect-to-the-vpn" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Enter your username and password provided by the VPN administrator.</li>
+<li>Click "Connect" to establish the connection to the VPN server.</li>
+</ul>
+<h2 id="connection-verification">Connection Verification<a class="headerlink" href="#connection-verification" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Verify that the connection is successful.</li>
+</ul>
+<h2 id="using-the-vpn">Using the VPN<a class="headerlink" href="#using-the-vpn" title="Permanent link">&para;</a></h2>
+<ul>
+<li>With the VPN connected, all your internet activities will go through the VPN.</li>
+<li>To disconnect, open OpenVPN Connect and click Disconnect.</li>
+</ul>
+<h2 id="profile-management">Profile Management<a class="headerlink" href="#profile-management" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Manage multiple VPN profiles within the app.</li>
+<li>To switch between profiles, disconnect from the current VPN and repeat the connection process with the desired profile.</li>
+</ul>
+<h1 id="getting-started-with-openvpn-3-linux">Getting Started with OpenVPN 3 Linux<a class="headerlink" href="#getting-started-with-openvpn-3-linux" title="Permanent link">&para;</a></h1>
+<p>OpenVPN 3 Linux is a modern client using the OpenVPN 3 Core Library. It enables unprivileged users to initiate and manage VPN sessions through D-Bus, enhancing privilege separation. This client is optimized for contemporary Linux distributions, but it's compatible with any platform that supports D-Bus.</p>
+<h2 id="pre-built-packages">Pre-built Packages<a class="headerlink" href="#pre-built-packages" title="Permanent link">&para;</a></h2>
+<p>OpenVPN 3 Linux v21 offers pre-built packages for various distributions. For production environments, opt for stable releases. Development or beta releases provide more frequent updates.</p>
+<h3 id="supported-distributions">Supported Distributions<a class="headerlink" href="#supported-distributions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Debian (Buster, Bullseye, Bookworm)</li>
+<li>Fedora (37, 38, Rawhide)</li>
+<li>Red Hat Enterprise Linux / CentOS (7, 8, 9)</li>
+<li>Ubuntu LTS (Focal, Jammy)</li>
+<li>Ubuntu (Kinetic, Lunar, Mantic)</li>
+</ul>
+<h2 id="installation-instructions">Installation Instructions<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h2>
+<h3 id="1-add-the-repository">1. Add the Repository:<a class="headerlink" href="#1-add-the-repository" title="Permanent link">&para;</a></h3>
+<p>For Debian / Ubuntu, start by installing necessary packages:</p>
+<pre><code class="language-bash">sudo apt install apt-transport-https curl
+</code></pre>
+<h3 id="2-retrieve-and-add-the-package-signing-key">2. Retrieve and Add the Package Signing Key:<a class="headerlink" href="#2-retrieve-and-add-the-package-signing-key" title="Permanent link">&para;</a></h3>
+<p>Create a directory for the keyrings, if needed:</p>
+<pre><code class="language-bash">mkdir -p /etc/apt/keyrings 
+</code></pre>
+<p>Download and add the OpenVPN Inc package signing key:</p>
+<pre><code class="language-bash">curl -sSfL https://packages.openvpn.net/packages-repo.gpg &gt; /etc/apt/keyrings/openvpn.asc
+</code></pre>
+<p>Add the OpenVPN repository to your system's source list:</p>
+<pre><code class="language-bash">echo &quot;deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian [DISTRIBUTION] main&quot; | tee /etc/apt/sources.list.d/openvpn3.list
+</code></pre>
+<p>Replace <code>[DISTRIBUTION]</code> with your specific Linux distribution release name (e.g., buster, bullseye, bookworm for Debian; focal, jammy for Ubuntu LTS).</p>
+<h3 id="3-install-openvpn-3-linux">3. Install OpenVPN 3 Linux:<a class="headerlink" href="#3-install-openvpn-3-linux" title="Permanent link">&para;</a></h3>
+<p>Update your package list and install OpenVPN 3 Linux:</p>
+<pre><code class="language-bash">sudo apt update 
+sudo apt install openvpn3
+</code></pre>
+<h2 id="using-openvpn-3-linux">Using OpenVPN 3 Linux<a class="headerlink" href="#using-openvpn-3-linux" title="Permanent link">&para;</a></h2>
+<h3 id="start-a-one-shot-configuration-profile">Start a One-Shot Configuration Profile:<a class="headerlink" href="#start-a-one-shot-configuration-profile" title="Permanent link">&para;</a></h3>
+<pre><code class="language-bash">openvpn3 session-start --config [config-file.ovpn]
+</code></pre>
+<h3 id="import-a-configuration-file-for-re-use">Import a Configuration File for Re-Use:<a class="headerlink" href="#import-a-configuration-file-for-re-use" title="Permanent link">&para;</a></h3>
+<pre><code class="language-bash">openvpn3 config-import --config [config-file.ovpn]
+</code></pre>
+<h3 id="start-a-new-vpn-session">Start a New VPN Session:<a class="headerlink" href="#start-a-new-vpn-session" title="Permanent link">&para;</a></h3>
+<pre><code class="language-bash">openvpn3 session-start --config [config-file.ovpn]
+</code></pre>
+<h3 id="manage-a-running-vpn-session">Manage a Running VPN Session:<a class="headerlink" href="#manage-a-running-vpn-session" title="Permanent link">&para;</a></h3>
+<p>Manage sessions with the <code>openvpn3</code> command. For example, to disconnect:</p>
+<pre><code class="language-bash">openvpn3 sessions-list 
+openvpn3 session-manage --session-path [session-path] --disconnect
+</code></pre>
+<h2 id="further-information">Further Information<a class="headerlink" href="#further-information" title="Permanent link">&para;</a></h2>
+<ul>
+<li>For comprehensive instructions, visit the OpenVPN 3 Linux project page and its release notes.</li>
+<li>ARM64/aarch64 architectures are in tech-preview, and feedback from users on this platform is encouraged.</li>
+<li>Fedora Copr repository instructions are available separately for Fedora and Red Hat Enterprise Linux users.</li>
+<li>Note that some architectures may have only tech-preview support or be available in specific repositories.</li>
+<li>This guide provides a general overview. Always refer to the latest official OpenVPN 3 Linux documentation and your distribution's specific guidelines for up-to-date information.
+```</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

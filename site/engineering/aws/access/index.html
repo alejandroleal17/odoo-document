@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Access - Engineering Portal</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Engineering Portal</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../.." class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../architecture/" class="dropdown-item">Architecture</a>
+</li>
+                                    
+<li>
+    <a href="../../environments/" class="dropdown-item">Environments</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Development Guidelines</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../sticky-bits/" class="dropdown-item">Sticky Bits</a>
+</li>
+            
+<li>
+    <a href="../../stern_use/" class="dropdown-item">Stern</a>
+</li>
+            
+<li>
+    <a href="../../cloudwatch/" class="dropdown-item">CloudWatch</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">GCP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../gcp/" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/access/" class="dropdown-item">Access</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/projects/" class="dropdown-item">Create Projects</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/openvpn/" class="dropdown-item">OpenVPN</a>
+</li>
+                                    
+<li>
+    <a href="../../gcp/containers/gcp_artifact_registry/" class="dropdown-item">Container Registry (ECR/GCR)</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Platform services</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../gcp/platform-services/scylladb-connection/" class="dropdown-item">ScyllaDB</a>
+</li>
+            
+<li>
+    <a href="../../gcp/platform-services/rethinkdb-connection/" class="dropdown-item">Rethinkdb</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">AWS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Access</a>
+</li>
+                                    
+<li>
+    <a href="../openvpn/" class="dropdown-item">OpenVPN</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Databases</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../database/rdsconfig/" class="dropdown-item">RDS</a>
+</li>
+            
+<li>
+    <a href="../database/backup_schema_Troc/" class="dropdown-item">Backups</a>
+</li>
+            
+<li>
+    <a href="../database/restaurar_db/" class="dropdown-item">Restore</a>
+</li>
+            
+<li>
+    <a href="../database/Respaldar_Restaurar_Tablas/" class="dropdown-item">Schemes and tables</a>
+</li>
+            
+<li>
+    <a href="../database/extensiones_requeridas_pg/" class="dropdown-item">Create PG Extensions</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud Plaftorm</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloud_plaftorm/Kubernetes/" class="dropdown-item">Kubernetes</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../openvpn/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/alejandroleal17/odoo-document/edit/master/docs/engineering/aws/access.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#configuration" class="nav-link">Configuration:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#before-installing-awsume-we-install" class="nav-link">Before installing AWSUME, we install:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<pre><code class="language-markdown">### AWSCLI Installation
+
+We execute the installation:
+
+```bash
+curl &quot;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&quot; -o &quot;awscliv2.zip&quot;
+unzip awscliv2.zip
+sudo ./aws/install
+</code></pre>
+<h2 id="configuration">Configuration:<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="format-of-configuration-and-credentials-files">Format of Configuration and Credentials Files<a class="headerlink" href="#format-of-configuration-and-credentials-files" title="Permanent link">&para;</a></h3>
+<p>The <code>config</code> and <code>credentials</code> files are organized into sections. Sections include profiles, <code>sso-sessions</code>, and services. A section is a named collection of configurations and continues until another section definition line is found. Multiple profiles and sections can be stored in the <code>config</code> and <code>credentials</code> files.</p>
+<p>They are plain text files that use the following format:</p>
+<ul>
+<li>Section names appear in brackets <code>[ ]</code> such as <code>[default]</code>, <code>[profile user1]</code>, and <code>[sso-session]</code>.</li>
+<li>All entries in a section adopt the general format of <code>setting_name=value</code>.</li>
+<li>Lines can be commented out if they start with a hash character <code>(#)</code>.</li>
+</ul>
+<p>The <code>config</code> and <code>credentials</code> files contain the following types of sections:</p>
+<p>We configure the <code>config</code> and <code>credentials</code> files in the <code>./aws</code> folder
+- In <code>Credentials</code></p>
+<pre><code class="language-ini">[default]
+aws_access_key_id = 
+aws_secret_access_key =
+
+[tr-dev]
+role_arn = 
+source_profile = 
+
+[tr-prod]
+role_arn = 
+source_profile = 
+
+[trocglobal]
+region = 
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+mfa_serial=
+</code></pre>
+<h2 id="before-installing-awsume-we-install">Before installing AWSUME, we install:<a class="headerlink" href="#before-installing-awsume-we-install" title="Permanent link">&para;</a></h2>
+<h3 id="installing-pyenv">Installing pyenv:<a class="headerlink" href="#installing-pyenv" title="Permanent link">&para;</a></h3>
+<p>We install the pyenv program.</p>
+<pre><code class="language-bash">curl https://pyenv.run | bash
+</code></pre>
+<p>Execute the following command to export the configuration to <code>.bashrc</code>:</p>
+<pre><code class="language-bash">echo 'export PYENV_ROOT=&quot;$HOME/.pyenv&quot;' &gt;&gt; ~/.bashrc
+echo 'export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+echo 'eval &quot;$(pyenv init --path)&quot;' &gt;&gt; ~/.bashrc
+</code></pre>
+<p>Once pyenv is installed, we proceed to verify if it is working correctly with the following commands:</p>
+<pre><code class="language-bash">pyenv install --list  # Verify available versions
+pyenv install 3.10.12  # Select a version to install
+</code></pre>
+<p>Within the navigator directory, activate the virtual environment env:</p>
+<p>Create the Python virtual environment:</p>
+<pre><code class="language-bash">pyenv local 3.10.12
+python -V
+</code></pre>
+<p>Then, activate the virtual environment:</p>
+<pre><code class="language-bash">python -m venv .venv
+source .venv/bin/activate
+</code></pre>
+<h3 id="awsume-installation">AWSUME Installation<a class="headerlink" href="#awsume-installation" title="Permanent link">&para;</a></h3>
+<pre><code class="language-bash">pip install awsume
+</code></pre>
+<h3 id="alias">Alias<a class="headerlink" href="#alias" title="Permanent link">&para;</a></h3>
+<p>The alias is necessary for Unix-type systems and shells, including Bash and Zsh. It is not necessary for Windows-type shells like PowerShell or Windows Command Prompt.</p>
+<p>The alias should be defined in your shell's startup file, so it loads in every shell session. It should look something like this:</p>
+<p>We adjust the awsume alias to be detected from pyenv.</p>
+<pre><code class="language-bash">alias awsume=&quot;. $(pyenv which awsume)&quot;
+</code></pre>
+<p>AWSUME will take the configuration from <code>.aws/</code> and the credentials, and we will be able to execute aws commands.</p>
+<p>For connecting to dev --&gt; <code>awsume tr-dev</code>
+- We will be prompted for our MFA code and logged into Amazon.</p>
+<p>For production --&gt; <code>awsume tr-prod</code></p>
+<p>Note: to switch environments, an update of the aws regions is required, for that we can apply the following command:</p>
+<pre><code class="language-bash">aws eks --region us-east-2 update-kubeconfig --name trocglobal-services
+</code></pre>
+<p>This Markdown manual provides a step-by-step guide for installing AWSCLI and AWSUME, including configuring <code>pyenv</code> and managing Python virtual environments.
+```</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
