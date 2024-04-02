@@ -22,6 +22,6 @@ jobs:
         mkdocs build
 
     - name: Serve MkDocs
-  run: |
-    nohup mkdocs serve &
-    sleep infinity
+      run: |
+        nohup mkdocs serve &
+        sleep infinity
