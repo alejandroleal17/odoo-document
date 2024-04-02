@@ -9,6 +9,12 @@ Internal Engineering Portal with documentation and references for Navigator Plat
 
 Basic authentication is included above without protection since it is only for documentation purposes while we are in playground mode. In the future, we could enhance security measures (or release it as is without auth).
 
+- name: Deploy
+  uses: peaceiris/actions-gh-pages@v3
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./public
+  
 ## Local development
 
 For a smooth development experience, ensure mkdocs is installed on your system. You can install it using pip as shown below:
