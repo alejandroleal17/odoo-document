@@ -1,3 +1,0 @@
-# Welcome to the Engineer Portal
-
-Welcome to the Navigator Engineering Portal, a dedicated hub for our **internal development and operations teams**. This portal serves as a central repository of knowledge, resources, and tools essential for the effective development, deployment, and maintenance of Navigator. Here, you will find in-depth technical documentation, development guidelines, release management protocols, and much more. This portal is designed to foster collaboration, knowledge sharing, and innovation within our team, ensuring that we collectively drive Navigator towards excellence. Stay updated with the latest development practices, explore detailed documentation, and engage with your fellow engineers to make Navigator a benchmark in its domain.
