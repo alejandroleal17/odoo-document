@@ -1,7 +1,7 @@
 site_name: Engineering Portal
 repo_url: https://github.com/alejandroleal17/odoo-document
 theme:
-  name: material
+  name: mkdocs
   logo: troc.gif
   palette:
     primary: red
@@ -10,15 +10,16 @@ theme:
     - navigation.sections
     - navigation.tabs
 markdown_extensions:
-  - footnotes
   - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+  - abbr
   - attr_list
+  - def_list
+  - footnotes
+  - meta
   - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
 nav:
   - General:
     - Home: index.md
