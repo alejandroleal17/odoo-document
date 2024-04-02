@@ -52,3 +52,13 @@ nav:
        - Create PG Extensions: engineering/aws/database/extensiones_requeridas_pg.md
     - Cloud Plaftorm: 
        - Kubernetes: engineering/aws/cloud_plaftorm/Kubernetes.md
+
+# Agrega la acción de GitHub Pages al final del archivo
+deploy:
+  steps:
+    - name: GitHub Pages action
+      uses: peaceiris/actions-gh-pages@v3.9.3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./site # Directorio donde se encuentra el contenido estático generado por MkDocs
+        allow_empty_commit: true
