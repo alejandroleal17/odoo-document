@@ -1,7 +1,7 @@
-site_name: Engineering Portal
+site_name: ODOO Domentation
 repo_url: https://github.com/alejandroleal17/odoo-document
 theme:
-  name: mkdocs
+  name: material
   logo: troc.gif
   palette:
     primary: red
