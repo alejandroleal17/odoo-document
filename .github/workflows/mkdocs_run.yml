@@ -24,4 +24,4 @@ jobs:
     - name: Serve MkDocs
       run: |
         nohup mkdocs serve &
-        sleep infinity
+        sleep 10s
