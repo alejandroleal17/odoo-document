@@ -20,13 +20,13 @@ Basic authentication is included above without protection since it is only for d
 
 For a smooth development experience, ensure mkdocs is installed on your system. You can install it using pip as shown below:
 
-```sh
+```bash
 $ pip install -r requirements.txt
 ```
 
 To verify your changes locally before committing and pushing, run the following command:
 
-```sh
+```bash
 ❯ mkdocs serve
 INFO    -  Building documentation...
 INFO    -  Cleaning site directory
