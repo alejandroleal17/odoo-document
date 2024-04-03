@@ -17,10 +17,6 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Build MkDocs
-      run: |
-        mkdocs build
-
     - name: Serve MkDocs
       run: |
         nohup mkdocs serve &
