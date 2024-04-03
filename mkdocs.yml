@@ -28,7 +28,7 @@ nav:
     - Development Guidelines:
       - Sticky Bits: engineering/sticky-bits.md
       - Stern:  engineering/stern_use.md
-      - CloudWatch: engineering/cloudwatch.md
+      
       
   - GCP:
     - Home: engineering/gcp/index.md
