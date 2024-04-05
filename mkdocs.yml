@@ -1,16 +1,20 @@
 site_name: Odoo Documentation
-repo_url: https://github.com/alejandroleal17/odoo-document
 theme:
   name: material
   logo: troc.gif
   palette:
-    primary: red
+    primary: '#512DA8'  
+    accent: '#673AB7'  
+    background: '#303030'  
+    text: '#FFFFFF'
+  extra:
+    favicon: odoo.ico  
   features:
     - content.code.copy
     - navigation.sections
     - navigation.tabs
 markdown_extensions:
-  - admonition
+  - admonition:
   - abbr
   - attr_list
   - def_list
@@ -20,36 +24,41 @@ markdown_extensions:
   - toc:
       permalink: true
 
+
+#plugins:
+ # - search
+  #- pdf-export
+
+
 nav:
   - General:
     - Home: index.md
-    - Architecture: engineering/architecture.md
-    - Environments: engineering/environments.md 
-    - Development Guidelines:
-      - Sticky Bits: engineering/sticky-bits.md
-      - Stern:  engineering/stern_use.md
-      
-      
-  - GCP:
-    - Home: engineering/gcp/index.md
-    - Access: engineering/gcp/access.md
-    - Create Projects: engineering/gcp/projects.md
-    - OpenVPN: engineering/gcp/openvpn.md
-    - Container Registry (ECR/GCR): engineering/gcp/containers/gcp_artifact_registry.md
-    - Platform services:
-       - ScyllaDB: engineering/gcp/platform-services/scylladb-connection.md
-       - Rethinkdb: engineering/gcp/platform-services/rethinkdb-connection.md
-  
-  - AWS:
-    - Home: engineering/aws/index.md
-    - Access: engineering/aws/access.md
-    - OpenVPN: engineering/aws/openvpn.md
-    - Databases:
-       - RDS: engineering/aws/database/rdsconfig.md   
-       - Backups: engineering/aws/database/backup_schema_Troc.md
-       - Restore: engineering/aws/database/restaurar_db.md
-       - Schemes and tables: engineering/aws/database/Respaldar_Restaurar_Tablas.md
-       - Create PG Extensions: engineering/aws/database/extensiones_requeridas_pg.md
-    - Cloud Plaftorm: 
-       - Kubernetes: engineering/aws/cloud_plaftorm/Kubernetes.md
+    - Odoo Inventario:  Bussines Process/00_a_Odoo_Inventario_en.md
+    - Business Process:
+        - Inventory Workflow: Bussines Process/00_flujo_en.md
+        - Inventory Process : Bussines Process/01_process.md
+        - Create Sales Order: Bussines Process/02_crear_orden_venta.md
+        - Automatic Order Delivery: Bussines Process/03_automatic_orden_entrega.md
+        - Whop Confirmation: Bussines Process/04_confirmacion_whop.md
+        - Process Completion:  Bussines Process/05-_finalizacion_process.md
 
+    - Warehouse team administrative Tasks:
+
+        - Create a contact (FT): Warehouse team administrative Tasks/01-contac_en.md
+        - Create a product: Warehouse team administrative Tasks/02-create_product_en.md
+        - stock manual adjustment: Warehouse team administrative Tasks/03-ajuste_manual_en.md
+        - check stock: Warehouse team administrative Tasks/04-stock_basico _en.md
+        - check forecasting: Warehouse team administrative Tasks/05-pronostico_en.md
+
+    - ERP common Tools:
+        - Views:
+            - Form: ERP common Tools/vista/form_en.md
+            - List: ERP common Tools/vista/list.md
+            - Graphs: ERP common Tools/vista/graficos_en.md
+        - Filter and Search and Group: ERP common Tools/filter_search_en.md
+        - Export: ERP common Tools/export_en.md
+        - Chatter: ERP common Tools/chatter_en.md
+        - Actions: ERP common Tools/accions_en.md
+        - Scheduler: ERP common Tools/scheduler_en.md
+        - Activities: ERP common Tools/actividades_en.md
+      

@@ -9,35 +9,23 @@ Internal Engineering Portal with documentation and references for Navigator Plat
 
 Basic authentication is included above without protection since it is only for documentation purposes while we are in playground mode. In the future, we could enhance security measures (or release it as is without auth).
 
-
-- name: Deploy
-  uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: ./public
-  
 ## Local development
 
 For a smooth development experience, ensure mkdocs is installed on your system. You can install it using pip as shown below:
 
-```bash
+```sh
 $ pip install -r requirements.txt
 ```
 
 To verify your changes locally before committing and pushing, run the following command:
 
-```bash
+```sh
 ❯ mkdocs serve
 INFO    -  Building documentation...
 INFO    -  Cleaning site directory
-INFO    -  The following pages exist in the docs directory, but are not included
-           in the "nav" configuration:
-             - engineering/development-guidelines.md
-             - engineering/stats_pg.md
-INFO    -  Documentation built in 0.23 seconds
-INFO    -  [08:00:04] Watching paths for changes: 'docs', 'mkdocs.yml'
-INFO    -  [08:00:04] Serving on http://127.0.0.1:8000/
-
+INFO    -  Documentation built in 0.17 seconds
+INFO    -  [12:56:51] Watching paths for changes: 'docs', 'mkdocs.yml'
+INFO    -  [12:56:51] Serving on http://127.0.0.1:8000/
 ```
 
 This command will build the documentation and serve it locally, allowing you to review your updates in real-time.
