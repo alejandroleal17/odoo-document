@@ -1,13 +1,13 @@
 
 <center>
 
-## 🔍 Guide to Using Filters, Search and Grouping in Odoo
+<span class='titulo'> 🔍 Guide to Using Filters, Search and Grouping in Odoo</span>
 
 </center>
 
 Odoo offers powerful filtering, searching and grouping tools that allow you to quickly find the information you need in different applications. Here's a step-by-step guide to get the most out of these features:
 
-**1. Record Filtering:**
+### **1. Record Filtering:**
 
 - **Step 1:** Access the corresponding application in Odoo, such as Sales, Purchases, Inventory, etc.
 
@@ -19,7 +19,7 @@ Odoo offers powerful filtering, searching and grouping tools that allow you to q
 
 - **Step 5:** Apply the filters and you will see the list update to show only records that meet the selected criteria.
 
-**2. Records Search:**
+### **2. Records Search:**
 
 - **Step 1:** Within the corresponding application, look for the search bar at the top of the page.
 
@@ -29,7 +29,7 @@ Odoo offers powerful filtering, searching and grouping tools that allow you to q
 
 - **Step 4:** Odoo will display the records that match your search term in the main list.
 
-**3. Grouping of Records:**
+### **3. Grouping of Records:**
 
 - **Step 1:** As with the previous steps, access the application and display the list of records.
 
@@ -39,18 +39,4 @@ Odoo offers powerful filtering, searching and grouping tools that allow you to q
 
 - **Step 4:** Once the grouping field is selected, Odoo will organize the records into groups based on that field.
 
-<style>
-        
-        .md-copyright{
-            display: none;
-        }
-        h1{
-            display: none;
-          }
-        .md-footer{
-                  background-color:#526cfe;
-                  height: 40px; /* Cambiar a la altura deseada */
-                  line-height: 40px;                 
-                }
-        
-    </style>
+<button id="printButton">PRINT PDF  <img src='../../print-pdf.png' width='25px' heigth='15px' class='print-image'> </button>

@@ -1,12 +1,8 @@
-<br>
 
-![logo_troc](troc.gif) <img src='odoo_logo.svg' width='350' style="float: right;">
-<br>
-<br>
+<span class='titulo'> <img src='process.png' width='8%' heigth='8%'> Guide to the Sales Process in Odoo
+</span>
 
-## Guide to the Sales Process in Odoo
-
-**Step 1: Creation of a Sales Order by the CCO**
+### **Step 1: Creation of a Sales Order by the CCO**
 
 The first step in the sales process in Odoo is the creation of a sales order by the CCO (Chief Commercial Officer). Follow these steps:
 
@@ -16,14 +12,14 @@ The first step in the sales process in Odoo is the creation of a sales order by 
 4. Fill in the necessary sales order details such as customer, products ordered and quantity.
 5. Once the details are completed, save the sales order.
 
-**Step 2: Automatic Creation of a Draft Delivery Order**
+### **Step 2: Automatic Creation of a Draft Delivery Order**
 
 After the CCO has created the sales order, Odoo will automatically generate a delivery order as a draft. This step involves:
 
 1. Odoo checks the availability of products in the warehouse.
 2. Create a draft delivery order based on the sales order.
 
-**Step 3: WHOP Verification and Confirmation**
+### **Step 3: WHOP Verification and Confirmation**
 
 The next step is for the WHOP (Warehouse Operations Personnel) to verify and confirm the delivery order. Follow these steps:
 
@@ -34,6 +30,8 @@ The next step is for the WHOP (Warehouse Operations Personnel) to verify and con
 5. Once confirmed, assign a FedEx tracking number to the delivery.
 6. Notify the CCO by mentioning it in the order about the confirmation and provide the FedEx tracking number.
 
-**Step 4: Completion of the Process**
+### **Step 4: Completion of the Process**
 
 Once the WHOP has confirmed the delivery order and provided the FedEx tracking number to the CCO, the sales process is complete. The CCO can then inform the customer about the status of the order and provide the tracking number for tracking.
+
+<button id="printButton">PRINT PDF  <img src='../../print-pdf.png' width='25px' heigth='15px' class='print-image'> </button>

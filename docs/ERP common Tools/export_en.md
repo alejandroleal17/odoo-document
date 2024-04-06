@@ -1,6 +1,6 @@
-
-## <img src='export-icon.png' width='4%' heigth='4%'>  Export the stock of products in Odoo:
-
+<center>
+<span class='titulo'> <img src='export-icon.png' width='4%' heigth='4%'>  Export the stock of products in Odoo:</span>
+</center>
 ### Step 1: Access the Inventory Module
 
 1. Log in to your Odoo instance.
@@ -41,31 +41,4 @@
 1. If you are happy with the export, save the exported file to a secure location on your device.
 2. You may use this information for analysis, reporting, or any other purpose as necessary.
 
-<style>
-        .titulo{
-            font-size: 40px;
-            font-weight: bold;
-        }
-        .md-copyright{
-            display: none;
-        }
-        h1{
-            display: none;
-          }
-        .md-footer{
-                  background-color:#526cfe;
-                  height: 40px;
-                  line-height: 40px;                 
-                }
-        img[alt="logo"] {
-            width: 15%; 
-            height: 15%;
-        }
-      .md-tabs__link[href="."] {
-            display: none;
-        }
- .md-tabs__item--active{
-            display: none;
-        }
-        
-    </style>
+<button id="printButton">PRINT PDF  <img src='../../print-pdf.png' width='25px' heigth='15px' class='print-image'> </button>

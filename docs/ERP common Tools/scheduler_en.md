@@ -1,6 +1,7 @@
-<center>
 
-##  🕰️ The Scheduler in Odoo:
+
+<center>
+<span class='titulo'> 🕰️ The Scheduler in Odoo:</span>
 
 </center>
 
@@ -44,18 +45,4 @@ The Scheduler is a tool that allows you to automate periodic tasks in Odoo. You 
 ### 9. Maintenance:
    - Perform regular maintenance of the Scheduler, reviewing and updating scheduled tasks as necessary to ensure their effectiveness and continued relevance.
 
-<style>
-        
-        .md-copyright{
-            display: none;
-        }
-        h1{
-            display: none;
-          }
-        .md-footer{
-                  background-color:#526cfe;
-                  height: 40px; /* Cambiar a la altura deseada */
-                  line-height: 40px;                 
-                }
-        
-    </style>
+<button id="printButton">PRINT PDF  <img src='../../print-pdf.png' width='25px' heigth='15px' class='print-image'> </button>

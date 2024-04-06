@@ -1,7 +1,10 @@
+<center>
 
-<br>
+<span class='titulo'> <img src='actions.png' width='10%' heigth='10%' class='titulo-image'> Common actions you can perform in the Odoo inventory module: </span>
+</center>
 
-## 📝✓ Common actions you can perform in the Odoo inventory module:
+
+
 
 ### 1. Create a Product:
 
@@ -53,3 +56,6 @@
 
  - Conduct inventory audits regularly to maintain the accuracy of your data.
  - Use Odoo tools to reconcile differences and correct any discrepancies.
+
+
+<button id="printButton">PRINT PDF  <img src='../../print-pdf.png' width='25px' heigth='15px' class='print-image'> </button>

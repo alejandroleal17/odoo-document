@@ -24,16 +24,17 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra_css:
+  - style.css
 
-#plugins:
- # - search
-  #- pdf-export
+extra_javascript:
+  - button.js
 
 
 nav:
   - General:
     - Home: index.md
-    - Odoo Inventario:  Bussines Process/00_a_Odoo_Inventario_en.md
+    - Odoo Inventary:  Bussines Process/00_a_Odoo_Inventario_en.md
     - Business Process:
         - Inventory Workflow: Bussines Process/00_flujo_en.md
         - Inventory Process : Bussines Process/01_process.md
@@ -46,9 +47,9 @@ nav:
 
         - Create a contact (FT): Warehouse team administrative Tasks/01-contac_en.md
         - Create a product: Warehouse team administrative Tasks/02-create_product_en.md
-        - stock manual adjustment: Warehouse team administrative Tasks/03-ajuste_manual_en.md
-        - check stock: Warehouse team administrative Tasks/04-stock_basico _en.md
-        - check forecasting: Warehouse team administrative Tasks/05-pronostico_en.md
+        - Stock manual adjustment: Warehouse team administrative Tasks/03-ajuste_manual_en.md
+        - Check stock: Warehouse team administrative Tasks/04-stock_basico _en.md
+        - Check forecasting: Warehouse team administrative Tasks/05-pronostico_en.md
 
     - ERP common Tools:
         - Views:

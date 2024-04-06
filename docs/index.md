@@ -1,69 +1,45 @@
 <center>
 
-<span class='titulo'> Inventario Odoo </span>
+<span class='titulo'> <img src='invetory_icon.png' width='10%' heigth='10%'> Odoo Inventory </span>
 </center>
-## **🌟 Introducción**
-¡Bienvenidos a la guía del sistema de inventario de la empresa, exploraremos cómo Odoo nos ayuda a mantener todo organizado y eficiente.
 
-## **📦 Gestión de Productos**
-Nuestro catálogo en Odoo es extenso y detallado, asegurando que cada producto esté justo donde debe estar.
+## **🌟 Introduction**
+Welcome to the company inventory system guide, we will explore how Odoo helps us keep everything organized and efficient.
 
-### **Categorías Principales**
-- **Electrónica**: Desde smartphones hasta gadgets de última generación.
-- **Moda**: Vestuario que marca tendencia.
-- **Accesorios**: Complementos perfectos para cualquier ocasión.
+## **📦 Product Management**
+Our catalog at Odoo is extensive and detailed, ensuring that each product is right where it should be.
 
-## **🔍 Seguimiento de Stock**
-El seguimiento preciso es vital. Por eso, usamos tecnología de punta para saber siempre dónde está cada artículo.
+### **Main Categories**
+- **Electronics**: From smartphones to latest generation gadgets.
+- **Fashion**: Trend-setting clothing.
+- **Accessories**: Perfect accessories for any occasion.
 
-### **Números de Serie**
-Ideal para artículos únicos que requieren atención especial.
+## **🔍 Stock Tracking**
+Accurate tracking is vital. That's why we use cutting-edge technology to always know where each item is.
 
-### **Lotes**
-Perfecto para manejar grandes cantidades de productos similares.
+### **Serial numbers**
+Ideal for unique items that require special attention.
 
-## **🔄 Procedimientos de Inventario**
-Nuestros procedimientos están diseñados para ser claros y sencillos, facilitando la gestión diaria del inventario.
+### **Lots**
+Perfect for handling large quantities of similar products.
 
-### **Recepciones**
-Recibimos nuevos productos con un sistema que verifica y registra cada artículo al llegar.
+## **🔄 Inventory Procedures**
+Our procedures are designed to be clear and simple, facilitating daily inventory management.
 
-### **Entregas**
-Nuestro compromiso es entregar a tiempo, y nuestro proceso está optimizado para ello.
+### **Receptions**
+We receive new products with a system that verifies and records each item upon arrival.
 
-### **Ajustes de Inventario**
-Cuando los números no cuadran, nuestros ajustes de inventario entran en acción para solucionarlo.
+### **Deliveries**
+Our commitment is to deliver on time, and our process is optimized for this.
 
-## **🏁 Conclusión**
-Con Odoo, la Empresa mantiene su inventario bajo control, asegurando eficiencia y precisión en cada paso del camino.
+### **Inventory tweaks**
+When the numbers don't add up, our inventory adjustments kick in to fix it.
+
+## **🏁 Conclusion**
+With Odoo, the Company keeps its inventory under control, ensuring efficiency and accuracy every step of the way.
+
+
 
 
 ---
-<style>
-        .titulo{
-            font-size: 40px;
-            font-weight: bold;
-        }
-        .md-copyright{
-            display: none;
-        }
-        h1{
-            display: none;
-          }
-        .md-footer{
-                  background-color:#526cfe;
-                  height: 40px;
-                  line-height: 40px;                 
-                }
-        img[alt="logo"] {
-            width: 15%; 
-            height: 15%;
-        }
-      .md-tabs__link[href="."] {
-            display: none;
-        }
- .md-tabs__item--active{
-            display: none;
-        }
-        
-    </style>
+<button id="printButton">PRINT PDF  <img src='print-pdf.png' width='25px' heigth='15px' class='print-image'> </button>

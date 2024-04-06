@@ -1,0 +1,62 @@
+        .md-header{
+        background-color: #604058;
+}
+         .titulo{
+             font-size: 35px;
+             font-weight: bold;
+         }
+         .md-copyright{
+             display: none;
+         }
+         h1{
+             display: none;
+           }
+         .md-footer{
+                   background-color:#604058;
+                   height: 40px;
+                   line-height: 40px;
+                 }
+         img[alt="logo"] {
+             width: 15%;
+             height: 15%;
+         }
+       .md-tabs__link[href="."] {
+             display: none;
+         }
+  .md-tabs__item--active{
+             display: none;
+         }
+
+/* Estilo para el botón */
+        #printButton {
+            background-color: #604058; /* Color de fondo */
+            border: none;
+            color: #E4D4E8; /* Color del texto */
+            padding: 15px 32px; /* Espaciado interno */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px; /* Borde redondeado */
+        }
+
+        /* Al pasar el mouse por el botón */
+        #printButton:hover {
+            background-color: #18081c; /* Cambio de color */
+        }
+.print-image{
+               vertical-align: middle; /* Alineación vertical */
+            }
+
+.titulo img{
+vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-header__topic {
+    display: none;
+  }
+}
+

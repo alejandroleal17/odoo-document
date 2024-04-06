@@ -57,31 +57,6 @@
 2.6. **Import and Export Stock Product Data**
     - Use Odoo's import and export features to update and synchronize stock data with other systems.
     - Set up integrations with external tools to facilitate data import and export.
-<style>
-        .titulo{
-            font-size: 40px;
-            font-weight: bold;
-        }
-        .md-copyright{
-            display: none;
-        }
-        h1{
-            display: none;
-          }
-        .md-footer{
-                  background-color:#526cfe;
-                  height: 40px;
-                  line-height: 40px;                 
-                }
-        img[alt="logo"] {
-            width: 15%; 
-            height: 15%;
-        }
-      .md-tabs__link[href="."] {
-            display: none;
-        }
- .md-tabs__item--active{
-            display: none;
-        }
-        
-    </style>
+
+
+<button id="printButton">PRINT PDF  <img src='../../print-pdf.png' width='25px' heigth='15px' class='print-image'> </button>
